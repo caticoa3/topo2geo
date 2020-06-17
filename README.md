@@ -21,6 +21,7 @@ Depends on [shapely](https://pypi.org/project/Shapely/) and [click](https://pypi
 If the topojson contains mulitple layers (i.e. there are multiple values in the "objects" key). Then seperate geojson files will be output with the layer name. 
 
 For example a topojson containing states and counties:
+```
 {
     "type": "Topology",
     "objects": {
@@ -34,6 +35,7 @@ For example a topojson containing states and counties:
                   }
                }
 }
+```
 would produce two geojson files, output_geo_county.json and output_geo_state.json.
 
 ### Troubleshooting
